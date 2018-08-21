@@ -5,9 +5,8 @@ filetype plugin indent on
 
 set expandtab
 set tabstop=4
- 
-autocmd vimenter * NERDTree
-autocmd VimEnter * wincmd p
+
+map <C-n> :NERDTreeToggle<CR> 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 
